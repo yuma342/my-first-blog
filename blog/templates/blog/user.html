@@ -1,0 +1,4 @@
+<form action="{% url 'board:good' post.pk %}" method="post">
+    {% csrf_token %}
+    <input type="submit" name="good" value="いいね"　id="test">（{{ post.good }} いいね）<p  style="color:red"><font size="1"><strong>押すと1ページ目まで戻ってしまいます！（いつか直す！)</strong></font></p>
+</form>
